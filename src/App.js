@@ -6,9 +6,9 @@ import * as d3 from 'd3';
 import { Button } from '@material-ui/core';
 
 export const App = () => {
-  const [numOfPeople, setNumOfPeople] = useState(8);
-  const [roomWidth, setRoomWidth] = useState(50);
-  const [roomLength, setRoomLength] = useState(30);
+  const [numOfPeople, setNumOfPeople] = useState(5);
+  const [roomWidth, setRoomWidth] = useState(80);
+  const [roomLength, setRoomLength] = useState(50);
   const [people, setPeople] = useState([]);
   const [simulationBegin, setSimulationBegin] = useState(false);
   const [intervalId, setIntervalId] = useState();
@@ -20,8 +20,8 @@ export const App = () => {
     right: 20,
     left: 20
   }
-  let width = (roomWidth * 25) - margin.left - margin.right;
-  let height = (roomLength * 25) - margin.top - margin.bottom;
+  let width = (roomWidth * 15) - margin.left - margin.right;
+  let height = (roomLength * 15) - margin.top - margin.bottom;
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -188,7 +188,7 @@ export const App = () => {
       svg.append('circle')
       .attr("cx", x_pos)
       .attr("cy", y_pos)
-      .attr("r", x(1.6))
+      .attr("r", x(6))
       .style("fill", "red")
       .style("opacity", 0.25)
 
@@ -249,7 +249,7 @@ export const App = () => {
         svg.append('circle')
         .attr("cx", new_x_pos)
         .attr("cy", new_y_pos)
-        .attr("r", x(1.6))
+        .attr("r", x(6))
         .style("fill", "red")
         .style("opacity", 0.25)
       }
