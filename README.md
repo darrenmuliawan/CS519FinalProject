@@ -3,3 +3,6 @@
 2. Run ```npm install``` to install the dependencies
 3. Run ```npm start``` to start the development server
 4. Navigate to ```localhost:3000``` to open the app
+
+# Or see it here
+https://darrenmuliawan.github.io/CS519FinalProject/
