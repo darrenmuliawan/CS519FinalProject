@@ -5,4 +5,4 @@
 4. Navigate to ```localhost:3000``` to open the app
 
 # Or see it here
-```https://darrenmuliawan.github.io/CS519FinalProject/```
+https://darrenmuliawan.github.io/CS519FinalProject/
